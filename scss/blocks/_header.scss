@@ -1,0 +1,158 @@
+.header {
+    background-image: url("/img/header-bg-img.jpg");
+    background-size: cover;
+    padding: 80px 0 80px;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    &::before {
+        content: "";
+        position: absolute;
+        top: -350px;
+        left: -300px;
+        z-index: -2;
+        width: 1054px;
+        height: 1077px;
+        border-radius: 50%;
+        background-color: #6f5afa;
+        opacity: 0.8;
+    }
+}
+.header h1 {
+    font-family: $poppins-bold;
+    color: #fff;
+    line-height: 70px;
+    // overflow: hidden;
+    span {
+        font-family: $poppins-thin;
+        font-weight: 400;
+        font-size: 36px;
+        margin-left: 12px;
+        // background-color: blue;
+        border-bottom: 1px solid #fff;
+        display: none;
+        line-height: 45px;
+    }
+}
+// .title-anim {
+//     animation-name: header_title_anim;
+//     animation-duration: 2s;
+//     animation-iteration-count: infinite;
+//     animation-direction: alternate-reverse;
+//     animation-timing-function: linear;
+// }
+// @keyframes header_title_anim {
+//     from {
+//         width: 95px;
+//     }
+//     to {
+//         width: 500px;
+//     }
+// }
+// .header-span-anim-opacity1 {
+//     animation-name: header_span_anim_opacity1;
+//     animation-duration: 2s;
+//     animation-iteration-count: infinite;
+//     animation-fill-mode: backwards;
+//     animation-timing-function: linear;
+// }
+// @keyframes header_span_anim_opacity1 {
+//     from {
+//         opacity: 0;
+//         // display: none;
+//     }
+//     to {
+//         opacity: 1;
+//     }
+// }
+// .header-span-anim-opacity0 {
+//     animation-name: header_span_anim_opacity0;
+//     // animation-duration: 2s;
+//     animation-iteration-count: infinite;
+//     animation-fill-mode: backwards;
+//     animation-timing-function: linear;
+//     &:nth-child(1) {
+//         animation-delay: 2s;
+//         animation-duration: 8s;
+//     }
+// }
+// @keyframes header_span_anim_opacity0  {
+//     from {
+//         opacity: 1;
+//         // display: none;
+//     }
+//     to {
+//         display: none;
+//         opacity: 0;
+//     }
+// }
+.header p {
+    font-family: $poppins-regular;
+    font-size: 16px;
+    color: #fff;
+    margin-top: 20px;
+}
+.header button {
+    font-family: $poppins-regular;
+    font-size: 18px;
+    padding: 10px 40px;
+    border-radius: 5px;
+}
+.btn-buy-now {
+    border: 1px solid #fff;
+    color: #fff;
+    margin-right: 10px;
+    &:hover {
+        background-color: #fff;
+        color: #000000;
+    }
+}
+.btn-see-demo {
+    border: 1px solid #fff;
+    background-color: #fff;
+    color: #000000;
+    &:hover {
+        background-color: transparent;
+        color: #fff;
+    }
+}
+// Animation
+.header-cards-anim {
+    position: absolute;
+    // top: 0;
+    // right: -300px;
+    animation-name: header_card_anim;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    width: 1600px;
+    height: auto;
+    z-index: -1;
+    // animation-timing-function: ease;
+}
+@keyframes header_card_anim {
+    from {
+        top: -60px;
+        right: -600px;
+    }
+    to {
+        top: 10px;
+        right: -380px;
+    }
+}
+.header::before {
+    animation-name: header_cicle_anim;
+    animation-duration: 1.3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+@keyframes header_cicle_anim {
+    from {
+        width: 554px;
+        height: 577px;
+    }
+    to {
+        width: 1054px;
+        height: 1077px;
+    }
+}

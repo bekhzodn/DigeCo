@@ -1,0 +1,76 @@
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+.scroll-btn {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #6451F6;
+    position: sticky;
+    top: 90%;
+    left: 95%;
+    color: #fff;
+    overflow: hidden;
+    .fa-angles-up {
+        position: absolute;
+        transform: translate(-50%, -50%);
+    }
+    &:hover {
+        text-decoration: none;
+        color: #fff;
+    }
+}
+.scroll-btn .scroll-ic-top {
+    top: 50%;
+    left: 50%;
+    transition: 0.3s all;
+}
+.scroll-btn:hover .scroll-ic-top {
+    animation-name: scroll_ic_anim;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+@keyframes scroll_ic_anim {
+    0% {
+        top: 50%;
+    }
+    30% {
+        top: 30%;
+        opacity: 0;
+    }
+    60% {
+        top: 80%;
+        opacity: 0;
+    }
+    100% {
+        top: 50%;
+        opacity: 1;
+    }
+}

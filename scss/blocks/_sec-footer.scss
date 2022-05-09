@@ -1,0 +1,11 @@
+footer {
+    padding: 90px 0 85px;
+    background-image: url("/img/footer.jpg");
+    background-size: cover;
+    p {
+        font-family: $poppins-regular;
+        font-size: 16px;
+        color: #fff;
+        margin-top: 10px;
+    }
+}
